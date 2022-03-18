@@ -14,7 +14,7 @@ var server = http.createServer(app);
 var io = require('socket.io')(server);
 
 // connect to mongodb
-const DB = 'your db';
+const DB = 'mongodb+srv://test:test123@cluster0.wowgn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 // listening to socket io events from the client (flutter code)
 io.on('connection', (socket) => {
